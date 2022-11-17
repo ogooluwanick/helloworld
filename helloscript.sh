@@ -14,10 +14,16 @@
 # This is test text your script ran good thanks
 # textComment
 
-count=10
+count=2
 if [ $count == 10 ]
 	then	
 		echo true
-	else
+elif (( $count > 10 ))
+	then
+		echo "greater"
+elif (( $count < 10 ))
+	then
+		echo "less"
+else
 		echo false
 fi
