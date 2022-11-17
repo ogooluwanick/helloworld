@@ -14,16 +14,29 @@
 # This is test text your script ran good thanks
 # textComment
 
-count=2
-if [ $count == 10 ]
-	then	
-		echo true
-elif (( $count > 10 ))
-	then
-		echo "greater"
-elif (( $count < 10 ))
-	then
-		echo "less"
+# count=2
+# if [ $count == 10 ]
+# 	then	
+# 		echo true
+# elif (( $count > 10 ))
+# 	then
+# 		echo "greater"
+# elif (( $count < 10 ))
+# 	then
+# 		echo "less"
+# else
+# 		echo false
+# fi
+
+
+age=4
+if (( $age < 25 )) && (( $age > 18 ))
+ then 
+ 	echo "appropreate"
 else
-		echo false
+	echo "Inappropreate"
+
 fi
+
+
+
