@@ -10,6 +10,14 @@
 
 #comment 																#comment 
 
-cat << textComment														#muiltiline comment
-This is test text your script ran good thanks
-textComment
+# cat << textComment														#muiltiline comment
+# This is test text your script ran good thanks
+# textComment
+
+count=10
+if [ $count == 10 ]
+	then	
+		echo true
+	else
+		echo false
+fi
