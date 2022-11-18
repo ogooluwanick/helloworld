@@ -10,7 +10,7 @@
 
 #comment 																#comment 
 
-# cat << textComment														#muiltiline comment
+# cat << textComment													#muiltiline comment
 # This is test text your script ran good thanks
 # textComment
 
@@ -29,7 +29,7 @@
 # fi
 
 
-# age=18																	#condictional statements
+# age=18														#condictional statements
 # if (( $age < 25  ||  $age > 18 ))
 #  then 
 #  	echo "appropreate"
@@ -69,7 +69,7 @@
 # 	done			
 
 
-# read number 											#do while loop
+# read number 												#do while loop
 # while (( $number > 0 ))
 # 	do
 # 	echo $number
@@ -77,22 +77,31 @@
 # done
 
 
-# for (( i=0 ;i<=200 ; i++ ))							#for loop
+# for (( i=0 ;i<=200 ; i++ ))								#for loop
 # do 
 # 	echo $i 
 # done
 
-echo $1 $2 												#data from script call
-echo $1 "is great at" $2	
+# echo $1 $2 												#data from script call
+# echo $1 "is great at" $2	
 
-args=("$@")												#dynamic arr
-echo ${args[0]} ${args[1]} ${args[2]}
-echo $@													#display all arr items
-echo $#													#display number of arr items
+# args=("$@")												#dynamic arr
+# echo ${args[0]} ${args[1]} ${args[2]}
+# echo $@													#display all arr items
+# echo $#													#display number of arr items
 
 
-read text												#accept data from cmd line 
-echo $text 
+# read text													#accept data from cmd line 
+# echo $text 
+
+	
+# while read line 											#script input
+# 	echo "$line"
+# done	<  "${1:-/dev/stdin}"
+
+
+
+
 
 
 
