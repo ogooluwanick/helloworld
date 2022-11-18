@@ -29,17 +29,41 @@
 # fi
 
 
-age=8
-if (( $age < 25  ||  $age > 18 ))
- then 
- 	echo "appropreate"
-elif (( $age<6 )) 
-	then 
-		echo "prison straight"
-else
-	echo "Inappropreate"
+# age=18																	#condictional statements
+# if (( $age < 25  ||  $age > 18 ))
+#  then 
+#  	echo "appropreate"
+# elif (( $age<6 )) 
+# 	then 
+# 		echo "prison straight"
+# else
+# 	echo "Inappropreate"
+# fi
 
-fi
+
+cat  << whatis 												#switch statements
+Which color do you like best?
+	1 - Blue"
+	2 - Red"
+	3 - Yellow"
+	4 - Green"
+	5 - Orange"
+whatis
+
+read color;
+
+case $color in
+  1) echo "Blue is a primary color.";;
+  2) echo "Red is a primary color.";;
+  3) echo "Yellow is a primary color.";;
+  4) echo "Green is a secondary color.";;
+  5) echo "Orange is a secondary color.";;
+  *) echo "This color is not available. Please choose a different one.";; 
+esac
+
+
+
+
 
 
 
