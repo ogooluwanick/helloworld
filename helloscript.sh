@@ -69,12 +69,17 @@
 # 	done			
 
 
-read number
-while (( $number > 0 ))
-	do
-	echo $number
-	number=$(( number-1 ))
-done
+# read number 											#do while loop
+# while (( $number > 0 ))
+# 	do
+# 	echo $number
+# 	number=$(( number-1 ))
+# done
 
+
+for (( i=0 ;i<=200 ; i++ ))
+do 
+	echo $i 
+done
 
 
