@@ -41,29 +41,40 @@
 # fi
 
 
-cat  << whatis 												#switch statements
-Which color do you like best?
-	1 - Blue"
-	2 - Red"
-	3 - Yellow"
-	4 - Green"
-	5 - Orange"
-whatis
+# cat  << whatis 												#switch statements
+# Which color do you like best?
+# 	1 - Blue"
+# 	2 - Red"
+# 	3 - Yellow"
+# 	4 - Green"
+# 	5 - Orange"
+# whatis
 
-read color;
+# read color;
 
-case $color in
-  1) echo "Blue is a primary color.";;
-  2) echo "Red is a primary color.";;
-  3) echo "Yellow is a primary color.";;
-  4) echo "Green is a secondary color.";;
-  5) echo "Orange is a secondary color.";;
-  *) echo "This color is not available. Please choose a different one.";; 
-esac
+# case $color in
+#   1) echo "Blue is a primary color.";;
+#   2) echo "Red is a primary color.";;
+#   3) echo "Yellow is a primary color.";;
+#   4) echo "Green is a secondary color.";;
+#   5) echo "Orange is a secondary color.";;
+#   *) echo "This color is not available. Please choose a different one.";; 
+# esac
+
+# num=10 ;
+# while (( $num > 0 ))
+# 	do
+# 		echo $num
+# 		$num = $(( $num-1 ))  
+# 	done			
 
 
-
-
+read number
+while (( $number > 0 ))
+	do
+	echo $number
+	number=$(( number-1 ))
+done
 
 
 
