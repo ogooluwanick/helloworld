@@ -29,10 +29,13 @@
 # fi
 
 
-age=4
-if (( $age < 25 )) && (( $age > 18 ))
+age=8
+if (( $age < 25  ||  $age > 18 ))
  then 
  	echo "appropreate"
+elif (( $age<6 )) 
+	then 
+		echo "prison straight"
 else
 	echo "Inappropreate"
 
