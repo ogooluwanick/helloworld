@@ -77,9 +77,31 @@
 # done
 
 
-for (( i=0 ;i<=200 ; i++ ))
-do 
-	echo $i 
-done
+# for (( i=0 ;i<=200 ; i++ ))							#for loop
+# do 
+# 	echo $i 
+# done
+
+echo $1 $2 												#data from script call
+echo $1 "is great at" $2	
+
+args=("$@")												#dynamic arr
+echo ${args[0]} ${args[1]} ${args[2]}
+echo $@													#display all arr items
+echo $#													#display number of arr items
+
+
+read text												#accept data from cmd line 
+echo $text 
+
+
+
+
+
+
+
+
+
+
 
 
