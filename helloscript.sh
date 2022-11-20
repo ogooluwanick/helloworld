@@ -99,12 +99,26 @@
 # 	echo "$line"
 # done	<  "${1:-/dev/stdin}"
 
-# ls -al 1>>file.text 2>file1.text 						#stdout #1 for output #2 for error
-ls -al >& file.text 									#stdout #1 & #2 to same file
+# ls -al 1>>file.text 2>file1.text 							#stdout #1 for output #2 for error
+# ls -al >& file.text 										#stdout #1 & #2 to same file
+
+# message="Hello script viewer"								#export script to 2nd script
+# export message
+# ./testscript.sh
 
 
+echo "endter 1st str"
+read str1
 
+echo "endter 1st str"
+read str2
 
+if (( $str1 == $str2 ))
+then 
+	echo "both are equal"
+else 
+	echo "both are not equal"
+fi
 
 
 
