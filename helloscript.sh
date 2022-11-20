@@ -99,7 +99,8 @@
 # 	echo "$line"
 # done	<  "${1:-/dev/stdin}"
 
-
+# ls -al 1>>file.text 2>file1.text 						#stdout #1 for output #2 for error
+ls -al >& file.text 									#stdout #1 & #2 to same file
 
 
 
