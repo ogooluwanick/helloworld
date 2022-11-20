@@ -107,18 +107,21 @@
 # ./testscript.sh
 
 
-echo "endter 1st str"
-read str1
+# echo "endter 1st str"										#read use 
+# read str1
 
-echo "endter 1st str"
-read str2
+# echo "endter 1st str"
+# read str2
 
-if (( $str1 == $str2 ))
-then 
-	echo "both are equal"
-else 
-	echo "both are not equal"
-fi
+# if (( $str1 == $str2 ))
+# then 
+# 	echo "both are equal"
+# else 
+# 	echo "both are not equal"
+# fi
+
+#  echo "${str1,,}"											#to cap.  		string processing 
+# echo "${str2^^e}"											#to uppercase
 
 
 
