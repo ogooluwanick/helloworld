@@ -124,9 +124,21 @@
 # echo "${str2^^e}"											#to uppercase
 
 
+# n1=31														#num artimetic
+# n2=22	
 
+# echo $(( n1 + n2 ))
+# echo $(( n1 - n2 ))
+# echo $(( n1 * n2 ))
+# echo $(( n1 / n2 ))
+# echo $(( n1 % n2 ))
 
+echo "Enter Hex Number of your choice"
+read Hex
 
+echo -n "The decimal value of $Hex is :"
+
+echo "obase=10; ibase=16; $Hex" | bc
 
 
 
