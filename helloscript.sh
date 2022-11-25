@@ -133,13 +133,20 @@
 # echo $(( n1 / n2 ))
 # echo $(( n1 % n2 ))
 
-echo "Enter Hex Number of your choice"
-read Hex
 
-echo -n "The decimal value of $Hex is :"
+# echo "Enter Hex Number of your choice"					#num converion
+# read Hex
 
-echo "obase=10; ibase=16; $Hex" | bc
+# echo -n "The decimal value of $Hex is :"
 
+# echo "obase=10; ibase=16; $Hex" | bc
+
+# declare -p													#declare cmd
+# declare myVar
+# declare myVar=22
+
+# declare -r pwdfile=/etc/passwd								#read only declare
+# echo $pwdfile
 
 
 
